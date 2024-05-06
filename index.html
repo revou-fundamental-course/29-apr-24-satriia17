@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trusted Travel Agent</title>
   </head>
   <body>
+    <!-- Navbar Section -->
     <header>
-      <div class="container">
+      <div class="navbar">
         <a href="#" class="brand">
           <img src="assets/logo.svg" alt="Logo" />
+          <span class="brand-name">Infinite Travel</span>
         </a>
         <nav>
           <div class="nav-links" id="nav-links">
@@ -20,18 +23,39 @@
             <a href="#">Contact Us</a>
           </div>
           <button
-          class="nav-toggle"
-          id="nav-toggle"
-          aria-label="Toggle Navigation"
-          aria-controls="nav-links"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle Navigation"
+            aria-controls="nav-links"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
       </div>
     </header>
+    <!-- Navbar End -->
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h5>Infinite Travel</h5>
+        <h1>let's embark on your dream journey</h1>
+        <p>
+          discover inspiring destinatons, create unforgettable memories, and
+          travel with confidence - advnture starts here
+        </p>
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            placeholder="your jouney begins with a search...,"
+          />
+          <button>search</button>
+        </div>
+      </main>
+    </section>
+    <!-- Hero End -->
   </body>
 </html>

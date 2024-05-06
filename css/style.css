@@ -2,9 +2,22 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 :root {
@@ -15,14 +28,26 @@
   --border-color: #ddd;
 }
 
-.container {
+.navbar {
   max-width: 1200px;
   width: 90%;
   margin: auto;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+}
+
 .brand img {
   height: 42px;
+}
+
+.brand-name {
+  font-weight: 600;
+  position: relative;
+  width: 188px;
+  left: 14px;
 }
 
 a {
@@ -36,8 +61,6 @@ a:active {
 }
 
 img {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -49,13 +72,17 @@ nav a {
 
 header {
   display: flex;
-  position: relative;
   height: 75px;
   border-bottom: 1px solid var(--border-color);
   background-color: var(--light-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-header > .container {
+header > .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,7 +151,112 @@ header > .container {
   transform: rotate(-45deg);
 }
 
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.653), rgba(0, 0, 0, 0.204)),
+    url("../assets/bgHero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero .content {
+  width: 100%;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero .content h5 {
+  color: var(--light-color);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero .content h1 {
+  font-size: 2rem;
+  max-width: 50rem;
+  color: var(--light-color);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.hero .content p {
+  color: #eee;
+  font-weight: 100;
+  max-width: 40rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero .content .search {
+  width: 80%;
+  max-width: 38rem;
+  height: 45px;
+  background: var(--light-color);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.hero .content .search i {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.6rem;
+}
+
+.hero .content .search input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: x-small;
+}
+
+.hero .content .search button {
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: inherit;
+  background: var(--secondary-color);
+  border: none;
+  outline: none;
+  color: var(--light-color);
+  font-weight: 400;
+  cursor: pointer;
+  font-size: smaller;
+}
+
+.hero .content .search button:hover {
+  background: lightslategray;
+}
+
 @media (min-width: 768px) {
+  .brand-name {
+    font-weight: 600;
+    position: relative;
+    width: 200px;
+    left: -23px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .nav-links {
     position: static;
     transform: none;
@@ -133,8 +265,41 @@ header > .container {
     flex-direction: row;
   }
 
-
   .nav-toggle {
     display: none;
+  }
+  .hero .content h5 {
+    color: var(--light-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .hero .content h1 {
+    font-size: 4rem;
+    max-width: 50rem;
+    color: var(--light-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero .content p {
+    color: #eee;
+    font-weight: 300;
+    max-width: 40rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero .content .search input {
+    font-size: 1rem;
+  }
+
+  .hero .content .search button {
+    font-size: 1rem;
   }
 }
