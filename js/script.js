@@ -9,11 +9,11 @@ navToggle.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "../assets/bgHero.jpg",
-    "../assets/destinations-1.jpg",
-    "../assets/destinations-2.jpg",
-    "../assets/destinations-3.jpg",
-    "../assets/destinations-4.jpg",
+    "assets/bgHero.jpg",
+    "assets/destinations-1.jpg",
+    "assets/destinations-2.jpg",
+    "assets/destinations-3.jpg",
+    "assets/destinations-4.jpg",
   ];
 
   const slideshowImage = document.getElementById("slideshow-image");
