@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Trusted Travel Agent</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Infinite Travel</title>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -18,9 +21,11 @@
         </a>
         <nav>
           <div class="nav-links" id="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Our Package</a>
-            <a href="#">Contact Us</a>
+            <a href="#" class="nav-link" data-section="#home">Home</a>
+            <a href="#" class="nav-link" data-section="#destinations"
+              >Destinations</a
+            >
+            <a href="#" class="nav-link" data-section="#contact">Contact Us</a>
           </div>
           <button
             class="nav-toggle"
@@ -39,6 +44,7 @@
     <!-- Navbar End -->
     <!-- Hero Section -->
     <section class="hero" id="home">
+      <img alt="Travel Picture" id="slideshow-image" />
       <main class="content">
         <h5>Infinite Travel</h5>
         <h1>let's embark on your dream journey</h1>
@@ -57,5 +63,286 @@
       </main>
     </section>
     <!-- Hero End -->
+    <!-- Services  -->
+    <section class="travel">
+      <div class="container">
+        <div class="box">
+          <img src="../assets/plan.png" alt="plan" />
+          <div class="content">
+            <h4>Seamless Travel Planning</h4>
+            <p>
+              Kami akan membantu anda dengan perencanaan yang matang dengan
+              memberikan pengalaman yang tak terlupakan selama anda berlibur.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../assets/map.png" alt="maps" />
+          <div class="content">
+            <h4>Tailored Experiences</h4>
+            <p>
+              Rencana Liburan kami dapat menyesuaikan kebutuhan anda dengan
+              mempertimbangkan destinasi wisata terbaik dalam perjalanan.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../assets/trust.png" alt="trust" />
+          <div class="content">
+            <h4>Relieble and Trustworthy</h4>
+            <p>
+              Kami telah bekerja sama dengan berbagai penginapan, transprtasi,
+              dan destinasi wisata terbaik untuk menyesuaikan kebutuhan anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services End  -->
+    <!-- Destinatons start  -->
+    <section class="destinations" id="destinations">
+      <h4 class="label">destinations</h4>
+      <div class="container">
+        <div class="container-box">
+          <h2 class="heading">city escape and nature retreats</h2>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              culpa pariatur iusto sequi, ut expedita soluta nihil est quaerat
+              itaque corporis maiores in, at id officiis tempore. Harum vitae
+              fugit itaque expedita asperiores vero delectus?
+            </p>
+            <a href="#">explore more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="box">
+            <img src="/assets/bgHero.jpg" alt="" />
+            <div class="text">
+              <h2>Italy</h2>
+            </div>
+          </div>
+          <div class="box">
+            <img src="assets/destinations-1.jpg" alt="" />
+            <div class="text">
+              <h2>Switzerland</h2>
+            </div>
+          </div>
+          <div class="box">
+            <img src="assets/destinations-2.jpg" alt="" />
+            <div class="text">
+              <h2>Turkey</h2>
+            </div>
+          </div>
+          <div class="box">
+            <img src="assets/destinations-3.jpg" alt="" />
+            <div class="text">
+              <h2>Indonesia</h2>
+            </div>
+          </div>
+          <div class="box">
+            <img src="/assets/destinations-4.jpg" alt="" />
+            <div class="text">
+              <h2>United States</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Destinatons ends  -->
+    <!-- Feedback Start  -->
+    <section class="feedback">
+      <div class="container">
+        <h4 class="label">What They Say?</h4>
+        <h2 class="heading">Traveler's Voices</h2>
+        <p class="paragraph">The Stories From Our Comunities</p>
+      </div>
+
+      <div class="voices">
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo1.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo2.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo3.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo4.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo5.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+        <div class="voice">
+          <div class="profile">
+            <img src="assets/photo6.jpg" alt="" />
+            <div class="detail">
+              <li>marvin davin</li>
+              <li>traveler</li>
+            </div>
+          </div>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellat iusto sunt, ducimus aliquam laboriosam placeat eligendi,
+            dignissimos facere ratione deserunt. Voluptatum ratione saepe
+            dolor!"
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Feedback End  -->
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <h2>Let's Start Your Journey!</h2>
+      <form id="contactForm">
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Email"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <select class="select-input">
+          <option value="" disabled selected class="item">
+            Select Destination
+          </option>
+          <option value="Italy">Italy</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Indonesia">Indonesia</option>
+        </select>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="detail">
+            <h3>Infinite Travel</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              in, non praesentium soluta quis enim aperiam aliquam, rem totam
+              porro, vel obcaecati modi architecto error maiores iusto quaerat
+              aut eum.
+            </p>
+            <h5>get in touch</h5>
+            <a href="#">Andhika@mail.co.id</a>
+            <div class="social">
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>
+              <a href="#"><i class="fa fa-facebook-square"></i></a>
+              <a href="#"><i class="fa fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="about-us">
+            <h4>about us</h4>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our term</a></li>
+            <li><a href="#">careers <span>we're hiring!</span></a></li>
+            <li><a href="#">mission and values</a></li>
+            <li><a href="#">partnerships</a></li>
+          </div>
+          <div class="about-us">
+            <h4>help</h4>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">booking guide</a></li>
+            <li><a href="#">cancellation policy</a></li>
+            <li><a href="#">site map</a></li>
+          </div>
+          <div class="about-us">
+            <h4>Resources</h4>
+            <li><a href="#">newsletter</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">gallery</li>
+            <li><a href="#">offers</a></li>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div>&copy;2024 - Infinite Travel inc. all rights reserved</div>
+          <div>
+            <a href="#">term & conditions</a>
+            <a href="#">privacy policy</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer End  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
